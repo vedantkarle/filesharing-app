@@ -12,6 +12,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a,a:hover{
+    color: #fff;
+}
+
 .screen{
     display: none;
 }
@@ -52,7 +56,7 @@ body{
     padding:10px;
 }
 
-.title{
+.fs-screen .title{
     padding:10px;
     font-size: 18px;
 }
