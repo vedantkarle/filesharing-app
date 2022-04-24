@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3e3b965f69.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div class="app">
+            <div class="screen join-screen">
+                <div class="form">
+                    <span style="font-size:30px;" class="tag is-info is-light is-large">
+                        Share your files instantly
+                    </span>
+                    <div class="form-input">
+                        <button class="button is-link" id="sender-start-con-btn">Create Room</button>
+                    </div>
+                    <div class="form-input" id="join-id">
+                        <b>Room ID</b>
+                        <span>000-000-000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="screen fs-screen active">
+                <div class="file has-name">
+                    <label class="file-label">
+                        <input class="file-input" type="file" name="resume">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                        </span>
+                        <span class="file-name">
+                            Screen Shot 2017-07-29 at 15.54.25.png
+                        </span>
+                    </label>
+                </div>
+                <div class="'files-list">
+                    <div class="title">Shared files:</div>
+                    <div class="columns is-mobile">
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="progress-percent">0%</div>
+                                        <hr />
+                                        <div class="filename">filename.txt</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="progress-percent">0%</div>
+                                        <hr />
+                                        <div class="filename">filename.txt</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js"
+            integrity="sha512-mxCAjvjp0jvMdGRIEvAHOCGL6BOucqWpTBXwchElsPKNw7BEegHviDHPnYrOrzgzBiw3GD/Q1ibpA5nlFPYDMw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="code.js"></script>
+    </body>
+
+</html>

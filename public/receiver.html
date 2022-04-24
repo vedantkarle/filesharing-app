@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3e3b965f69.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div class="app">
+            <div class="screen join-screen active">
+                <div class="form">
+                    <span style="font-size:30px;" class="tag is-info is-light is-large">
+                        Share your files instantly
+                    </span>
+                    <div class="form-input">
+                        <input class="input is-link" type="text" placeholder="Join ID" id="join-id">
+                    </div>
+                    <div class="form-input">
+                        <button class="button is-link" id="sender-start-con-btn">Join Room</button>
+                    </div>
+                </div>
+            </div>
+            <div class="screen fs-screen">
+                <div class="'files-list">
+                    <div class="title">Shared files:</div>
+                    <div class="item">
+                        <div class="progress">0%</div>
+                        <div class="filename">filename.txt</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.js"
+            integrity="sha512-mxCAjvjp0jvMdGRIEvAHOCGL6BOucqWpTBXwchElsPKNw7BEegHviDHPnYrOrzgzBiw3GD/Q1ibpA5nlFPYDMw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/javascript" src="socket.io/socket.io.js"></script>
+        <script type="text/javascript" src="code.js"></script>
+    </body>
+
+</html>
